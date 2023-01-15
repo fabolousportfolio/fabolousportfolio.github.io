@@ -836,6 +836,12 @@
 		/* RESPONSIVE CSS
 		-------------------------------------------------- */
 
+		@media only screen and (min-width: 1400px) {
+			.about-us-description-2 {
+				margin-top: 190px;
+			}
+		}
+
 		@media only screen and (min-width: 1200px) and (max-width: 1399px) {
 			.about-us-description {
 				margin-top: 70px;
@@ -1279,7 +1285,38 @@
 
 		video {
 			width: auto;
-			height: 450px;
+			height: 850px;
+/*			max-height: 450px !important;*/
 			border: 4px solid var(--accent-color);
 			background: no-repeat center center/cover;
+		}
+
+		@media only screen and (min-width: 768px) and (max-width: 1399px) {
+			video {
+				max-height: 450px !important;
+			}
+		}
+
+		@media only screen and (max-width: 505px) {
+			video {
+				height: 750px;
+			}
+		}
+
+		@media only screen and (max-width: 450px) {
+			video {
+				height: 650px;
+			}
+		}
+
+		@media only screen and (max-width: 395px) {
+			video {
+				height: 550px;
+			}
+		}
+
+		@media only screen and (max-width: 340px) {
+			video {
+				height: 500px;
+			}
 		}
