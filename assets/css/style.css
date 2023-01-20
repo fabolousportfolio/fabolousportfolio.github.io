@@ -1,8 +1,7 @@
-  		@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 
-  		@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-		@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 
   		* {
@@ -12,17 +11,19 @@
   			-ms-box-sizing: border-box;
   			/*padding: 0;
   			margin: 0;*/
-  			font-family: 'Oswald', sans-serif;
+  			font-family: 'Montserrat', sans-serif;
   		}
 
 		:root {
 		    --accent-color: #c0805d;
 		    --main-color: #1d1d1d;
 		    --second-color: #94d1ac;
+		    --font-rubik-mono-one: 'Rubik Mono One', sans-serif;
 		}
 
-		.font-lobster {
-			font-family: 'Lobster', cursive;
+		.font-rubik {
+			font-family: 'Rubik Mono One', sans-serif;
+			font-style: italic;
 		}
 
 		.text-decoration-color {
@@ -77,6 +78,9 @@
 		.nav-link {
 			font-size: 24px;
 			text-transform: uppercase;
+			font-family: 'Rubik Mono One', sans-serif;
+			font-style: italic;
+			font-weight: 400;
 		}
 		.nav-link:hover {
 			color: var(--accent-color);
@@ -335,6 +339,12 @@
 		 @media (min-width: 992px) {
 			 body > #overlay {
 				 right: calc(424px - 10px);
+			}
+		}
+
+		 @media only screen and (max-width: 350px) {
+		 	body > .navbar-collapse .nav-image {
+			 margin-bottom: 30px;
 			}
 		}
 		 @keyframes topbar-x {
@@ -737,8 +747,8 @@
 	  
 	  h1 {
 	    color: #fff;
-	    font-family: 'Open Sans', sans-serif;
-	    font-weight: 800;
+	    font-family: 'Rubik Mono One', sans-serif;
+	    font-weight: 400;
 	    font-size: 4em;
 	    letter-spacing: -2px;
 	    text-align: center;
@@ -752,6 +762,24 @@
 	    content: 'a place to spend your time';
 	    font-size: .4em;
 	    text-align: center;
+	  }
+
+	  @media only screen and (max-width: 520px) {
+	  	.full-screen h1 {
+	  		font-size: 50px !important;
+	  	}
+	  }
+
+	  @media only screen and (max-width: 420px) {
+	  	.full-screen h1 {
+	  		font-size: 40px !important;
+	  	}
+	  }
+
+	  @media only screen and (max-width: 340px) {
+	  	.full-screen h1 {
+	  		font-size: 35px !important;
+	  	}
 	  }
 	  
 	  /*.button-line {
@@ -773,11 +801,13 @@
 	  }*/
 
 	  .button-line a {
+	  	font-family: 'Rubik Mono One', sans-serif;
+	  	font-weight: 400;
 	  	font-size: 24px;
 	  	text-transform: uppercase;
 	  	padding: 10px 25px;
-	  	border: 3px solid white;
-	  	color: white;
+	  	border: 3px solid var(--accent-color);
+	  	color: var(--accent-color);
 	  	text-decoration: none;
 	  	transition: all 0.3s;
 	  	-webkit-transition: all 0.3s;
@@ -786,9 +816,8 @@
 	  }
 
 	  .button-line a:hover {
-	  	color: var(--accent-color);
-	  	border-color: var(--accent-color);
-	  	font-weight: 700;
+	  	color: #fff;
+	  	border-color: #fff;
 	  }
 	  
 	  .button-line:hover {
@@ -796,6 +825,24 @@
 	    -webkit-opacity: 1;
 	    -moz-opacity: 1;
 	    -ms-opacity: 1;
+	  }
+
+	  @media only screen and (max-width: 500px) {
+	  	.button-line a {
+	  		font-size: 18px;
+	  	}
+	  }
+
+	  @media only screen and (max-width: 379px) {
+	  	.button-line a {
+	  		font-size: 16px;
+	  	}
+	  }
+
+	  @media only screen and (max-width: 340px) {
+	  	.button-line a {
+	  		font-size: 14px;
+	  	}
 	  }
 
 
@@ -817,8 +864,6 @@
 		}
 
 		.lead {
-			font-family: 'Roboto', sans-serif;
-			letter-spacing: 1px;
 			line-height: 1.6;
 		}
 
@@ -911,6 +956,7 @@
 			padding: 5px 20px;
 			border: 2px solid var(--accent-color);
 			transition: all 0.3s;
+			font-weight: 700;
 			-webkit-transition: all 0.3s;
 			-moz-transition: all 0.3s;
 			-ms-transition: all 0.3s;
@@ -939,7 +985,7 @@
 
 		.gallery-selection-buttons {
 			font-size: 18px;
-			font-family: 'Roboto', sans-serif;
+			font-family: 'Montserrat', sans-serif;
 			transition: all 0.3s;
 			-webkit-transition: all 0.3s;
 			-moz-transition: all 0.3s;
@@ -954,7 +1000,8 @@
 		/* Texts Color */
 		.main-colors {
 			color: var(--accent-color);
-			font-family: 'Lobster', cursive;
+			font-family: 'Rubik Mono One', cursive;
+			font-style: italic;
 		}
 
 		.main-colors-touch {
@@ -989,7 +1036,7 @@
         	background: var(--accent-color);
         	border-radius: 50%;
         	vertical-align: middle;
-        	padding: 5px 15px;
+        	padding: 10px 17px;
         	font-size: 30px;
         	color: white;
         	margin: 10px;
@@ -1005,20 +1052,52 @@
         	border: 4px solid var(--accent-color);
         }
 
-        .footer-locations {
-        	font-family: 'Roboto', sans-serif;
+        .footers .footer-locations {
+		  height: 100%;
+		  width: 100%;
+		  max-width: 100%;
+		}
+
+        .footers .footer-locations {
         	font-size: 16px;
         	color: black;
         	text-decoration: none;
-        	letter-spacing: 1px;
-        	vertical-align: middle;
         	transition: all 0.3s;
         	-webkit-transition: all 0.3s;
         	-moz-transition: all 0.3s;
         	-ms-transition: all 0.3s;
+        	height: 100%;
+        	width: 100%;
         }
 
-        .footer-locations:hover {
+        .footers .footer-locations .location-icons {
+/*        	vertical-align: middle;*/
+        	display: flex;
+			align-items: center;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-ms-align-items: center;
+			justify-content: center;
+			-webkit-justify-content: center;
+			-moz-justify-content: center;
+			-ms-justify-content: center;
+			width: 56px;
+			height: 56px;
+			font-size: 34px;
+			line-height: 0;
+			color: #000;
+			margin-right: 15px !important;
+        }
+
+        .footers .footer-locations a {
+          font-size: 16px;
+		  color: #000;
+		  font-weight: 400;
+		  margin: 0 0 5px 0;
+		  text-decoration: none;
+        }
+
+        .footers .footer-locations a:hover {
         	color: var(--accent-color);
         	text-decoration: underline;
         	text-decoration-color: var(--accent-color);
@@ -1074,24 +1153,46 @@
         	}
         }
 
-        @media only screen and (max-width: 339px) {
-        	.margin-of-footer-icons {
-        		margin-top: 30px;
+        @media only screen and (max-width: 380px) {
+        	.footer-all-rights-reserved h6 {
+        		font-size: 14px !important;
         	}
 
+        	.footer-all-rights-reserved a {
+        		font-size: 14px !important;
+        	}
+        }
+
+        @media only screen and (max-width: 355px) {
         	.fa-youtube {
         		margin-top: 35px;
         	}
         }
 
+        @media only screen and (max-width: 339px) {
+        	.margin-of-footer-icons {
+        		margin-top: 30px;
+        	}
+        }
+
+        @media only screen and (max-width: 330px) {
+        	.footer-all-rights-reserved h6 {
+        		font-size: 12px !important;
+        	}
+
+        	.footer-all-rights-reserved a {
+        		font-size: 12px !important;
+        	}
+        }
+
         /* List of Menu */
         .header-h {
+		    font-family: var(--font-rubik-mono-one);
 		    font-size: 35px;
-		    color: var(--accent-color);
+		    font-style: italic;
+/*		    color: var(--accent-color);*/
 		    font-size: 46px;
-		    font-family: 'Lobster', cursive;
 		    font-weight: 300;
-		    text-decoration: underline;
 		    }
 		ul {
 		  list-style:none;
@@ -1117,9 +1218,9 @@
 		.menu-restaurant .menu-title
 		{
 		  float: left;
-		  font-family: 'Dancing Script', cursive;
+/*		  font-family: 'Dancing Script', cursive;*/
 /*		  text-transform: uppercase;*/
-		  letter-spacing: 2px;
+/*		  letter-spacing: 2px;*/
 		  color: var(--accent-color);
 		  font-size: 18px;
 /*		  max-width: 300px;*/
@@ -1146,7 +1247,7 @@
 		  display: block;
 		  float: left;
 		  color: #000;
-		  font-family: 'Roboto', sans-serif !important;
+/*		  font-family: 'Montserrat', sans-serif !important;*/
 		  font-size: 15px;
 		}
 		.menu-restaurant span.clearfix{
@@ -1259,8 +1360,9 @@
 
 		/* Menu Button */
 		.show-all-menus {
+			font-family: var(--font-rubik-mono-one);
 			letter-spacing: 1px;
-			color: #000;
+			color: var(--accent-color);
 			font-size: 24px;
 			padding: 10px 15px;
 			border: 3px solid var(--accent-color);
@@ -1273,9 +1375,27 @@
 		}
 
 		.show-all-menus:hover {
-			color: var(--accent-color);
+			color: #000;
 			cursor: pointer;
-			font-weight: 700;
+			border-color: #000;
+		}
+
+		@media only screen and (max-width: 500px) {
+		  	.show-all-menus {
+		  		font-size: 18px;
+		  	}
+	    }
+
+	    @media only screen and (max-width: 379px) {
+		  	.show-all-menus {
+		  		font-size: 16px;
+		  	}
+	    }
+
+		@media only screen and (max-width: 340px) {
+			.show-all-menus {
+				font-size: 14px;
+			}
 		}
 
 		/* Popup Image */
@@ -1311,7 +1431,13 @@
 
 		@media only screen and (max-width: 395px) {
 			video {
-				height: 550px;
+				height: 600px;
+			}
+		}
+
+		@media only screen and (max-width: 365px) {
+			video {
+				height: 560px;
 			}
 		}
 
