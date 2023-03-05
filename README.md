@@ -1,4 +1,4 @@
 # fabolousportfolio.github.io
-This is a portfolio of Fabolous Digital Agency
+This is a portfolio of fabolous digital agency
 
-&copy; 2023 Fabolous Digital Agency
+&copy; 2023 by fabolous digital agency
