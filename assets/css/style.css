@@ -970,9 +970,9 @@
 			}
 		}
 
-		@media only screen and (max-width: 414px) {
+		@media only screen and (max-width: 390px) {
 			.lead {
-				font-size: 18px;
+				font-size: 13px !important;
 			}
 		}
 
@@ -980,9 +980,11 @@
 			.featurette-heading {
 				font-size: 30px;
 			}
+		}
 
+		@media only screen and (max-width: 320px) {
 			.lead {
-				font-size: 13px !important;
+				font-size: 12px !important;
 			}
 		}
 
@@ -1392,6 +1394,12 @@
 		@media only screen and (max-width: 440px) {
 			.menu-restaurant .menu-title {
 				max-width: 250px;
+			}
+		}
+
+		@media only screen and (max-width: 390px) {
+			.menu-restaurant .menu-subtitle {
+				font-size: 10.5px !important;
 			}
 		}
 
