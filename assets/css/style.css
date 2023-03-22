@@ -1305,17 +1305,19 @@
         	}
         }
 
-        @media only screen and (max-width: 390px) {
-        	.footers .footer-locations a {
-        		font-size: 13px;
-        	}
-
+        @media only screen and (max-width: 414px) {
         	.footer-all-rights-reserved h6 {
-        		font-size: 12px !important;
+        		font-size: 10px !important;
         	}
 
         	.footer-all-rights-reserved a {
-        		font-size: 12px !important;
+        		font-size: 10px !important;
+        	}
+        }
+
+        @media only screen and (max-width: 390px) {
+        	.footers .footer-locations a {
+        		font-size: 13px;
         	}
         }
 
@@ -1327,11 +1329,11 @@
 
         @media only screen and (max-width: 330px) {
         	.footer-all-rights-reserved h6 {
-        		font-size: 12px !important;
+        		font-size: 9px !important;
         	}
 
         	.footer-all-rights-reserved a {
-        		font-size: 12px !important;
+        		font-size: 9px !important;
         	}
         }
 
@@ -1402,7 +1404,7 @@
 /*		  font-family: 'Montserrat', sans-serif !important;*/
 		  font-size: 12px;
 		  font-weight: 500;
-		  font-style: italic;
+/*		  font-style: italic;*/
 		}
 		.menu-restaurant span.clearfix{
 		  position: relative;
@@ -1461,7 +1463,7 @@
 			}
 		}
 
-		@media only screen and (max-width: 498px) {
+		@media only screen and (max-width: 530px) {
 
 			#menu-filters ul {
 				margin: 0;
@@ -1508,9 +1510,9 @@
 			}
 		}
 
-		@media only screen and (max-width: 390px) {
+		@media only screen and (max-width: 414px) {
 			.menu-restaurant .menu-subtitle {
-				font-size: 10.5px !important;
+				font-size: 9px !important;
 			}
 		}
 
