@@ -1307,11 +1307,11 @@
 
         @media only screen and (max-width: 414px) {
         	.footer-all-rights-reserved h6 {
-        		font-size: 10px !important;
+        		font-size: 11px !important;
         	}
 
         	.footer-all-rights-reserved a {
-        		font-size: 10px !important;
+        		font-size: 11px !important;
         	}
         }
 
@@ -1816,6 +1816,12 @@
 		.address-info a {
 			color: black;
 			text-decoration: none;
+		}
+
+		@media only screen and (max-width: 414px) {
+			.address-info {
+				font-size: 12px !important;
+			}
 		}
 
 		/* Waiting Food */
