@@ -27,6 +27,14 @@
 			background: var(--transparent-background);
 		}
 
+		a {
+			-webkit-tap-highlight-color: rgba(204, 231, 255, 0.5) !important;
+		}
+
+		button {
+			-webkit-tap-highlight-color: rgba(204, 231, 255, 0.5) !important;
+		}
+
 		.font-rubik {
 			font-family: var(--font-rubik-mono-one);
 			font-style: italic;
@@ -42,8 +50,9 @@
 			width: 100%;
 			position: fixed !important;
 			z-index: 10;
-			top: 0 !important;
-			background: rgba(255, 255, 255, 0.8) !important;
+			top: 0;
+/*			background: rgba(255, 255, 255, 0.8) !important;*/
+			background: white;
 		}
 
 		.image-logo {
@@ -234,7 +243,8 @@
 			 width: 424px;
 			 height: 100%;
 			 padding: 60px 1rem;
-			 background-color: rgba(255, 255, 255, 0.8);
+/*			 background-color: rgba(255, 255, 255, 0.8);*/
+			 background: white;
 			 border-left: 1px solid #e3e3e3;
 			 text-align: center;
 			 visibility: visible;
@@ -727,7 +737,7 @@
 	    bottom: 0;
 	    left: 0;
 	    margin-top: -25px !important;
-	    background: url(https://images.pexels.com/photos/5865427/pexels-photo-5865427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+	    background: url(https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
 	    background-size: cover;
 		background-repeat: no-repeat;
 	    background-position: center;
@@ -871,6 +881,55 @@
 	  	}
 	  }
 
+	  /* About Us Section */
+	  #aobut-us {
+/*	  	margin-top: 150px;*/
+		flex-wrap: wrap;
+	  }
+
+	  .about-us-section {
+	  	justify-content: center;
+	  	align-items: center;
+	  	align-content: center;
+	  	width: 60%;
+	  	max-width: 100%;
+	  	height: 80vh;
+	  	flex-wrap: wrap;
+	  	left: 0;
+	  	right: 0;
+	  	margin: auto;
+		background: url('./../../images/merchcafebali-1.jpg') no-repeat;
+		background-size: contain;
+		background-position: center;
+		text-align: center;
+		place-items: center;
+	  }
+
+	  .about-us-section .about-us-texts {
+	  	line-height: 2.4;
+		font-size: 15px !important;
+		font-weight: 500;
+		letter-spacing: normal !important;
+		padding: 8.5px 5px;
+		background-color: rgba(255, 255, 255, 0.8);
+/*		box-shadow:0 0 0 0.5em black;*/
+		display: inline;
+		position: relative;
+		top: 300px;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		place-items: center;
+		place-content: center;
+	  }
+
+	  @media only screen and (max-width: 767px) {
+	  	.about-us-section {
+	  		width: 100%;
+	  	}
+	  }
+
+
 
 	  	/* Featurettes
 		------------------------- */
@@ -893,7 +952,8 @@
 			line-height: 1.6;
 			font-size: 15px !important;
 			font-weight: 500;
-			letter-spacing: 0.3px !important;
+			letter-spacing: normal !important;
+/*			font-style: italic;*/
 		}
 
 		.background-color-2 {
@@ -932,7 +992,13 @@
 
 		@media only screen and (min-width: 1400px) {
 			.about-us-description-2 {
-				margin-top: 190px;
+				margin-top: 100px;
+			}
+		}
+
+		@media only screen and (max-width: 1399px) {
+			.about-us-description-2 {
+				margin-top: 80px;
 			}
 		}
 
@@ -954,7 +1020,11 @@
 			}
 
 			.about-us-description-2 {
-				margin-bottom: 15px;
+				order: 2;
+			}
+
+			#map {
+				order: 1;
 			}
 		}
 
@@ -1002,7 +1072,7 @@
 			align-content: center;
 		}
 		.portfolio-menu .active {
-			background: var(--accent-color);
+			background: black;
 			color: #fff;
 			padding: 12px 13px;
 			transition: all 0.3s;
@@ -1045,6 +1115,10 @@
 		}
 		.portfolio-item img:hover {
 			transform: scale(1.1);
+			-webkit-transform: scale(1.1);
+			-moz-transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			cursor: zoom-in;
 		}
 
 		.gallery-selection-buttons {
@@ -1060,12 +1134,23 @@
 
 		.gallery-selection-buttons:hover {
 			color: #fff;
-			background: var(--accent-color);
+			background: black;
 		}
 
 		@media only screen and (max-width: 414px) {
 			.gallery-selection-buttons {
 				font-size: 15px;
+			}
+		}
+
+		@media only screen and (max-width: 396px) {
+			.portfolio-menu ul {
+				margin: 0;
+				padding: 0;
+			}
+
+			.portfolio-menu ul li {
+				display: grid;
 			}
 		}
 
@@ -1107,7 +1192,7 @@
         .footer-icons {
         	vertical-align: middle;
         	font-size: 30px;
-        	color: var(--accent-color);
+        	color: black;
         	margin: auto 10px;
         	transition: all 0.3s;
         	-webkit-transition: all 0.3s;
@@ -1274,7 +1359,7 @@
 		}
 		.menu-restaurant
 		{
-		  width: 50%;
+		  width: 100%;
 		  float: left;
 		  padding: 15px;
 		  position: realtive;
@@ -1283,7 +1368,7 @@
 		.menu-restaurant .menu-title
 		{
 		  float: left;
-		  color: var(--accent-color);
+		  color: #000;
 		  font-size: 15px;
 		  letter-spacing: 1px;
 		  font-weight: 600;
@@ -1326,15 +1411,17 @@
 		.filter {
 		    margin: 15px 15px;
 		}
+		.cafe-menu-title {
+			font-size: 30px !important;
+		}
 		#menu-filters ul li a.active, #menu-filters ul li a:hover
 		{
 /*		  text-decoration: underline;*/
-		  background: var(--accent-color);
+		  background: black;
 		  font-style: italic;
 		  font-family: var(--font-rubik-mono-one);
 		  color: #fff;
 		  padding: 10px 20px;
-		  border: 2px solid var(--accent-color);
 		  font-weight: 700;
 		  transition: all 0.3s;
 		  -webkit-transition: all 0.3s;
@@ -1359,6 +1446,19 @@
 		  text-decoration: none;
 		  cursor: pointer;
 		  
+		}
+
+		@media only screen and (min-width: 576px) and (max-width: 991px) {
+			#menu-filters ul {
+				margin: 0;
+				padding: 0;
+			}
+
+			#menu-filters ul li {
+				margin: -20px auto !important;
+
+				display: grid;
+			}
 		}
 
 		@media only screen and (max-width: 498px) {
@@ -1388,6 +1488,10 @@
 		  {
 		    font-size: 14px;
 		  }
+
+		  .cafe-menu-title {
+		  	font-size: 20px !important;
+		  }
 		  
 		}
 
@@ -1416,6 +1520,12 @@
 			}
 		}
 
+		@media only screen and (max-width: 341px) {
+			.header-h {
+				font-size: 22px !important;
+			}
+		}
+
 		@media only screen and (max-width: 335px) {
 			.menu-restaurant .menu-title {
 				max-width: 170px;
@@ -1425,7 +1535,7 @@
 		/* Menu Button */
 		.show-all-menus {
 			font-family: var(--font-rubik-mono-one);
-			background: var(--accent-color);
+			background: black;
 			letter-spacing: 1px;
 			color: #fff;
 			font-size: 24px;
@@ -1441,9 +1551,9 @@
 		}
 
 		.show-all-menus:hover {
-			color: #000;
+			background: transparent;
+			color: black;
 			cursor: pointer;
-			border-color: #000;
 		}
 
 		@media only screen and (max-width: 500px) {
@@ -1478,7 +1588,7 @@
 			position: fixed;
 			bottom: 50px;
 			right: 18px;
-			z-index: 999999;
+			z-index: 10;
 			transition: all 0.3s;
 			-webkit-transition: all 0.3s;
 			-moz-transition: all 0.3s;
@@ -1486,7 +1596,7 @@
 		}
 
 		.whatsapp-button a {
-			color: var(--accent-color);
+			color: black;
 			font-size: 70px;
 		}
 
@@ -1515,35 +1625,244 @@
 			background: white !important;
 			width: auto;
 			max-width: 100%;
-			height: 850px;
+			height: 650px;
 /*			max-height: 450px !important;*/
+			border: 2px solid black;
+/*			outline: black solid 2px;*/
+			border-right: 1px solid black !important;
 			background: no-repeat center center/cover;
-			box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-			-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-			-moz-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-			-ms-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 			transition: all 0.3s;
 			-webkit-transition: all 0.3s;
 			-moz-transition: all 0.3s;
 			-ms-transition: all 0.3s;
 		}
 
-		video:hover {
+		/* Play Button */
+		.play-button {
+			width: 100px;
+			height: auto;
+			transition: all 0.3s;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			-ms-transition: all 0.3s;
+			animation: playButton 5s infinite linear;
+			-webkit-animation: playButton 5s infinite linear;
+			-moz-animation: playButton 5s infinite linear;
+			-ms-animation: playButton 5s infinite linear;
+			filter: invert(100%) sepia(0%) saturate(7490%) hue-rotate(317deg) brightness(105%) contrast(104%);
+			-webkit-filter: invert(100%) sepia(0%) saturate(7490%) hue-rotate(317deg) brightness(105%) contrast(104%);
+			-moz-filter: invert(100%) sepia(0%) saturate(7490%) hue-rotate(317deg) brightness(105%) contrast(104%);
+			-ms-filter: invert(100%) sepia(0%) saturate(7490%) hue-rotate(317deg) brightness(105%) contrast(104%);
+		}
+
+		.play-button:hover {
 			transform: scale(1.1);
 			-webkit-transform: scale(1.1);
 			-moz-transform: scale(1.1);
 			-ms-transform: scale(1.1);
 		}
 
-		@media only screen and (min-width: 768px) and (max-width: 1399px) {
-			video {
-				max-height: 450px !important;
+		@keyframes playButton {
+			0% {
+				opacity: 1;
+				-webkit-opacity: 1;
+				-moz-opacity: 1;
+				-ms-opacity: 1;
+			}
+
+			50% {
+				opacity: 0.6;
+				-webkit-opacity: 0.6;
+				-moz-opacity: 0.6;
+				-ms-opacity: 0.6;
+			}
+
+			100% {
+				opacity: 1;
+				-webkit-opacity: 1;
+				-moz-opacity: 1;
+				-ms-opacity: 1;
 			}
 		}
 
-		@media only screen and (max-width: 505px) {
-			video {
-				height: 100%;
-				width: 100%;
+		@-webkit-keyframes playButton {
+			0% {
+				opacity: 1;
+				-webkit-opacity: 1;
+				-moz-opacity: 1;
+				-ms-opacity: 1;
 			}
+
+			50% {
+				opacity: 0.6;
+				-webkit-opacity: 0.6;
+				-moz-opacity: 0.6;
+				-ms-opacity: 0.6;
+			}
+
+			100% {
+				opacity: 1;
+				-webkit-opacity: 1;
+				-moz-opacity: 1;
+				-ms-opacity: 1;
+			}
+		}
+
+		@-moz-keyframes playButton {
+			0% {
+				opacity: 1;
+				-webkit-opacity: 1;
+				-moz-opacity: 1;
+				-ms-opacity: 1;
+			}
+
+			50% {
+				opacity: 0.6;
+				-webkit-opacity: 0.6;
+				-moz-opacity: 0.6;
+				-ms-opacity: 0.6;
+			}
+
+			100% {
+				opacity: 1;
+				-webkit-opacity: 1;
+				-moz-opacity: 1;
+				-ms-opacity: 1;
+			}
+		}
+
+		@-ms-keyframes playButton {
+			0% {
+				opacity: 1;
+				-webkit-opacity: 1;
+				-moz-opacity: 1;
+				-ms-opacity: 1;
+			}
+
+			50% {
+				opacity: 0.6;
+				-webkit-opacity: 0.6;
+				-moz-opacity: 0.6;
+				-ms-opacity: 0.6;
+			}
+
+			100% {
+				opacity: 1;
+				-webkit-opacity: 1;
+				-moz-opacity: 1;
+				-ms-opacity: 1;
+			}
+		}
+
+		.close-play-video {
+			position: absolute;
+			background: white;
+			color: black;
+			font-size: 30px;
+			border-radius: 50%;
+			padding: 5px 18px;
+			left: 50px;
+			right: auto;
+			z-index: 1;
+			transition: all 0.3s;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			-ms-transition: all 0.3s;
+		}
+
+		.close-play-video:hover {
+			color: white;
+			background: black;
+			transform: scale(1.1);
+		}
+
+		@media only screen and (max-width: 540px) {
+			.close-play-video {
+				left: calc(27% - 100px) !important;
+/*				display: table;*/
+			}
+		}
+
+		@media only screen and (max-width: 464px) {
+			.play-button {
+				width: 80px;
+			}
+		}
+
+		@media only screen and (max-width: 375px) {
+			.close-play-video {
+				left: calc(27% - 90px) !important;
+			}
+		}
+
+		@media only screen and (max-width: 345px) {
+			.close-play-video {
+				left: calc(27% - 80px) !important;
+			}
+		}
+
+		/* Contact Us */
+		.address-info {
+			font-size: 14px;
+			font-weight: 500;
+			color: black;
+			text-decoration: none;
+		}
+
+		.address-info:hover {
+			color: black;
+		}
+
+		.address-info a {
+			color: black;
+			text-decoration: none;
+		}
+
+		/* Waiting Food */
+		.waiting-food {
+			font-size: 18px;
+			color: black;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-right: 15px;
+		}
+
+		/* Hover Underline Animation */
+		.hover-underline-animation {
+		  display: inline-block;
+		  position: relative;
+		  color: #000 !important;
+		}
+
+		.hover-underline-animation::after {
+		  content: '';
+		  position: absolute;
+		  width: 100%;
+		  transform: scaleX(0);
+		  -webkit-transform: scaleX(0);
+		  -moz-transform: scaleX(0);
+		  -ms-transform: scaleX(0);
+		  height: 1px;
+		  bottom: 0;
+		  left: 0;
+		  background-color: #000 !important;
+		  transform-origin: bottom right;
+		  -webkit-transform-origin: bottom right;
+		  -moz-transform-origin: bottom right;
+		  -ms-transform-origin: bottom right;
+		  transition: transform 0.25s ease-out;
+		  -webkit-transition: transform 0.25s ease-out;
+		  -moz-transition: transform 0.25s ease-out;
+		  -ms-transition: transform 0.25s ease-out;
+		}
+
+		.hover-underline-animation:hover::after {
+		  transform: scaleX(1);
+		  -webkit-transform: scaleX(1);
+		  -moz-transform: scaleX(1);
+		  -ms-transform: scaleX(1);
+		  transform-origin: bottom left;
+		  -webkit-transform-origin: bottom left;
+		  -moz-transform-origin: bottom left;
+		  -ms-transform-origin: bottom left;
 		}
