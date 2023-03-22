@@ -34,6 +34,7 @@
 </head>
 
 <body>
+
 <nav class="navbar navbar-expand-md navbar-offcanvas">
     <div class="container">
         <!-- <a class="navbar-brand" href="#" style="font-size: 24px;">a mutant</a> -->
@@ -41,28 +42,16 @@
         <ul class="navbar-nav navbar-top">
             <li class="nav-item active">
                 <a class="nav-link" href="#" style="color: black; letter-spacing: 1px;">Home</a>
-                <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
             </li>
             <li class="nav-item">
                 <!-- <a class="nav-link" href="./menu.html" target="_blank" style="color: black;">Menu</a> -->
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li> -->
-            <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" role="button" href="#!" id="dropdownExample" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownExample">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li> -->
         </ul>
-        <button class="navbar-toggler navbar-toggler-right navbar-icon" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-toggler navbar-toggler-right navbar-icon" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar bar1"></span>
             <span class="icon-bar bar2"></span>
             <span class="icon-bar bar3"></span>
-        </button>
+        </a>
         <div class="navbar-collapse collapse ml-auto" id="navbar-mobile">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-image">
@@ -93,60 +82,80 @@
 	    <h1>MERCHCafe Bali</h1>
 	    <br>
 	    <br>
-	    <div class="button-line">
+	    <!-- <div class="button-line">
 	    	<a href="https://api.whatsapp.com/send?phone=6281353888350&text=Hi%20there,%20I%27d%20like%20%20to%20...%20" target="_blank">Reserve Now</a> 
-	    </div>
+	    </div> -->
+        <a href="#" data-bs-toggle="modal" data-bs-target="#merchvideo">
+            <img class="play-button" src="./assets/icons/play.png">
+        </a>
 	  </div>
 	</div>
 </header>
 
-<section id="about-us">
-	<div class="">
-		<div class="container">
-			<div class="row featurette">
-		      <div class="col-md-7 about-us-description">
-		        <h2 class="featurette-heading fw-normal lh-1 font-rubik">About <span class="main-colors">Us</span>.</h2>
-		        <br/>
-		        <h2 class="lead"><b>MERCH Cafe Bali</b> is a cafe which located in Canggu, Badung - Bali. We offer a delicious food and beverage along with the cafe atmosphere which can make you enjoying your time during hang out at <b>MERCH Cafe Bali</b>.</h2>
-		      </div>
-		      <div class="col-md-5">
-		        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+<section id="about-us" style="margin-top: 80px;">
+	<div class="container">
+		<!-- <div class="row featurette">
+	      <div class="col-md-7 about-us-description">
+	        <h2 class="featurette-heading fw-normal lh-1 font-rubik">We are...</h2>
+	        <br/>
+	        <h2 class="lead"><b>MERCH Cafe Bali</b> is a cafe which located in Canggu, Badung - Bali. We offer a delicious food and beverage along with the cafe atmosphere which can make you enjoying your time during hang out at MERCH Cafe Bali</h2>
+	      </div>
 
-		        <img class="about-us-image bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="./images/merchcafebali-1.jpg" alt="MERCH Cafe Bali">
-
-		        <!-- <video autoplay muted loop>
-					  <source src="./restaurant-2.mp4" type="video/mp4" style="background: no-repeat center center/cover;">
-					  Your browser does not support HTML5 video.
-				</video> -->
-
-		      </div>
-		    </div>
-		</div>
+	      <div class="col-md-5">
+	        <img class="about-us-image bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="./images/merchcafebali-1.jpg" alt="MERCH Cafe Bali">
+	      </div>
+	    </div> -->
+        <center>
+            <div class="about-us-section">
+                <!-- <h2 class="font-rubik">We are...</h2> -->
+                <h2 class="about-us-texts">MERCHCafe Bali is a cafe which located in Canggu, Badung - Bali. We offer a delicious food and beverage along with the cafe atmosphere which can make you enjoying your time during hang out at MERCH Cafe Bali</h2>
+                <!-- <img class="about-us-photo" src="./images/merchcafebali-1.jpg" alt="MERCH Cafe Bali"/> -->
+            </div>
+        </center>
 	</div>
 </section>
 
 
-<section id="our-menu" style="margin: 100px auto; background: #f2f2f2;">
+<section style="min-height: 100px;margin-top: 20px; background: transparent; margin-bottom: -40px;">
+    <marquee width="100%" direction="left" height="auto" scrollamount="5" loop="infinite">
+        <div style="display: flex; justify-content: center; vertical-align: middle; align-content: center; align-items: center; top: 0; bottom: auto; margin-top: 38px;">
+            <span class="waiting-food">Waiting for my Food, not Your Text.</span>    
+            <span class="waiting-food">Waiting for my Food, not Your Text.</span>    
+            <span class="waiting-food">Waiting for my Food, not Your Text.</span>    
+            <span class="waiting-food">Waiting for my Food, not Your Text.</span>    
+            <span class="waiting-food">Waiting for my Food, not Your Text.</span>
+            <span class="waiting-food">Waiting for my Food, not Your Text.</span>
+            <span class="waiting-food">Waiting for my Food, not Your Text.</span>
+            <span class="waiting-food">Waiting for my Food, not Your Text.</span>
+            <span class="waiting-food">Waiting for my Food, not Your Text.</span>
+            <span class="waiting-food">Waiting for my Food, not Your Text.</span>
+            <span class="waiting-food">Waiting for my Food, not Your Text.</span>
+            <span class="waiting-food">Waiting for my Food, not Your Text.</span>
+            <span class="waiting-food">Waiting for my Food, not Your Text.</span>
+            <span class="waiting-food">Waiting for my Food, not Your Text.</span>
+        </div>   
+    </marquee>
+</section>
+
+
+<section id="our-menu" style="margin: 60px auto; background: #f2f2f2;">
     <br/>
     <br/>
     <br/>
     <div class="container">
          <center>
-            <h6 class="font-rubik" style="font-size: 44px;">Our <span class="main-colors">Menu</span>.</h6>
+            <h6 class="font-rubik" style="font-size: 44px;">Our Menu.</h6>
          </center>
          <br/>
          <div class="portfolio-menu mt-2 mb-4">
             <ul>
                <li class="gallery-selection-buttons active" data-filter="*" style="border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; margin: 10px 0px;">All</li>
-               <li class="gallery-selection-buttons" data-filter=".breakfast" style="border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; margin: 10px 10px;">Breakfast</li>
-               <li class="gallery-selection-buttons" data-filter=".lunch" style="border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; margin: 10px 10px;">Lunch</li>
-               <li class="gallery-selection-buttons text" data-filter=".dinner" style="border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; margin: 10px 10px;">Dinner</li>
-               <li class="gallery-selection-buttons text" data-filter=".smoothies" style="border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; margin: 10px 10px;">Smoothies</li>
-               <li class="gallery-selection-buttons text" data-filter=".drinks" style="border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; margin: 10px 10px;">Drinks</li>
+               <li class="gallery-selection-buttons" data-filter=".food" style="border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; margin: 10px 10px;">Food</li>
+               <li class="gallery-selection-buttons" data-filter=".beverage" style="border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; margin: 10px 10px;">Beverage</li>
             </ul>
          </div>
          <div class="portfolio-item row">
-            <div class="item col-lg-3 col-md-4 col-6 col-sm">
+            <div class="item food col-lg-3 col-md-4 col-6 col-sm">
                <a href="./images/merchcafebali-5.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <img class="img-fluid" src="./images/merchcafebali-5.jpg" alt="MERCH Cafe Bali">
                </a>
@@ -156,17 +165,26 @@
                <img class="img-fluid" src="./images/merchcafebali-4.jpg" alt="MERCH Cafe Bali">
                </a>
             </div> -->
-            <div class="item col-lg-3 col-md-4 col-6 col-sm">
+            <div class="item food col-lg-3 col-md-4 col-6 col-sm">
                <a href="./images/merchcafebali-2.jpg" class="fancylight popup-btn" data-fancybox-group="light">
                <img class="img-fluid" src="./images/merchcafebali-2.jpg" alt="MERCH Cafe Bali">
                </a>
             </div>
-            <div class="item drinks col-lg-3 col-md-4 col-6 col-sm">
+            <div class="item beverage col-lg-3 col-md-4 col-6 col-sm">
                <a href="./images/merchcafebali-3.jpg" class="fancylight popup-btn" data-fancybox-group="light">
                <img class="img-fluid" src="./images/merchcafebali-3.jpg" alt="MERCH Cafe Bali">
                </a>
             </div>
-            
+            <div class="item food col-lg-3 col-md-4 col-6 col-sm">
+               <a href="./images/merchcafebali-6.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="./images/merchcafebali-6.jpg" alt="MERCH Cafe Bali">
+               </a>
+            </div>
+            <div class="item beverage col-lg-3 col-md-4 col-6 col-sm">
+               <a href="./images/merchcafebali-7.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="./images/merchcafebali-7.jpg" alt="MERCH Cafe Bali">
+               </a>
+            </div>
          </div>
       </div>
 
@@ -184,84 +202,47 @@
 </section>
 
 <section>
-	<div class="">
-	    <div class="container">
-		    <div class="row featurette">
-		      <div class="col-md-7 order-md-2 about-us-description-2">
-		        <h2 class="featurette-heading fw-normal lh-1 font-rubik">Enjoy your time <span class="main-colors">Here</span>.</h2>
-		        <br/>
-		        <h2 class="lead">It is a beautiful day spending our time with people we love. One is hanging out with your beloved partner at <b>MERCH Cafe Bali</b>. a place to spend your days and a place to make your day more memorable. It is at <b>MERCH Cafe Bali</b>.</h2>
-		      </div>
-		      <div class="col-md-5 order-md-1">
-		        <video autoplay muted loop>
-					  <source src="./videos/merchcafebali-video.mp4" type="video/mp4">
-					  Your browser does not support HTML5 video.
-				</video>
-		      </div>
-		    </div>
-		</div>
-	</div>
+    <div class="">
+        <div class="container">
+            <div class="row featurette">
+              <div class="col-md-5 order-md-2 about-us-description-2">
+                <div style="">
+                    <h2 class="font-rubik" style="font-size: 20px !important;">MerchCafe Bali</h2>
+                    <br/>
+                    <a class="address-info hover-underline-animation" href="https://goo.gl/maps/MpzqqA2j9V8ABA6YA" target="_blank">
+                        Jalan Tegal Sari No.51, Tibubeneng,<br/> Kec. Kuta Utara — Kabupaten Badung<br/> Bali — 80361 Indonesia
+                    </a>
+                    <br/>
+                    <span class="address-info">E-mail: <a class="hover-underline-animation" href="mailto:merchcafebali@gmail.com">merchcafebali@gmail.com</a></span>
+                    <br/>
+                    <span class="address-info">Phone No.: <a class="hover-underline-animation" href="https://api.whatsapp.com/send?phone=6281353888350&text=Hi%20there,%20I%27d%20like%20%20to%20...%20" target="_blank">+62 81 353 888 350</a></span>
+                    <br/>
+                    <br/>
+                    <div class="margin-of-footer-icons">
+                        <a class="footer-icons" href="https://www.instagram.com/merchcafebali/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="footer-icons" href="#" style="padding: 10px 21px;"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a class="footer-icons" href="https://www.tiktok.com/@merchcafebali" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                        <a class="footer-icons" href="#" style="padding: 10px 12px;"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <div id="map"></div>
+              </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
 <section style="margin-top: 100px;">
-      <div id="map"></div>
+      <!-- <div id="map"></div> -->
 </section>
 
-<footer id="contact-us" style="margin-top: 100px; margin-bottom: 25px;">
-	<div class="container">
-		<div class="row">
-			<div class="location-margins col-lg-8">
-				<!-- <a class="footer-locations" href="https://goo.gl/maps/MpzqqA2j9V8ABA6YA" target="_blank"><i class="fa-solid fa-map-pin"></i> Jl. Tegal Sari No.51, Tibubeneng, Kec. Kuta Utara, Kabupaten Badung, Bali 80361</a>
-				<br/>
-				<br/>
-				<a class="footer-locations" href="mailto:merchcafebali@gmail.com"><i class="fa-solid fa-envelope-open-text"></i> merchcafebali@gmail.com</a>
-				<br/>
-				<br/>
-				<a class="footer-locations" href="https://api.whatsapp.com/send?phone=6281353888350&text=Hi%20there,%20I%27d%20like%20%20to%20...%20" target="_blank"><i class="fa-brands fa-whatsapp"></i> +62 81 353 888 350</a> -->
-
-                <div class="footers">
-
-                    <div class="footer-locations d-flex align-items-center">
-                        <i class="location-icons fa-solid fa-map-pin lex-shrink-0"></i>
-                        <div>
-                            <a href="https://goo.gl/maps/MpzqqA2j9V8ABA6YA" target="_blank">
-                                Jl. Tegal Sari No.51, Tibubeneng, Kec. Kuta Utara, Kabupaten Badung, Bali 80361
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="footer-locations d-flex align-items-center">
-                        <i class="location-icons fa-solid fa-envelope-open-text lex-shrink-0"></i>
-                        <a href="mailto:merchcafebali@gmail.com">
-                        merchcafebali@gmail.com
-                        </a>
-                    </div>
-
-                    <div class="footer-locations d-flex align-items-center">
-                        <i class="location-icons fa-brands fa-whatsapp lex-shrink-0"></i>
-                        <a href="https://api.whatsapp.com/send?phone=6281353888350&text=Hi%20there,%20I%27d%20like%20%20to%20...%20" target="_blank">
-                        +62 81 353 888 350
-                        </a>
-                    </div>
-
-                </div>
-
-
-			</div>
-
-			<div class="col-lg-4 margin-of-footer-icons">
-				<a class="footer-icons" href="https://www.instagram.com/merchcafebali/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-				<a class="footer-icons" href="#" style="padding: 10px 21px;"><i class="fa-brands fa-facebook-f"></i></a>
-				<a class="footer-icons" href="https://www.tiktok.com/@merchcafebali" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-				<a class="footer-icons" href="#" style="padding: 10px 12px;"><i class="fa-brands fa-youtube"></i></a>
-			</div>
-		</div>
-	</div>
-
+<footer id="contact-us" style="margin-bottom: 25px;">
 	<center style="margin-top: 75px; margin-bottom: -10px;">
         <div class="footer-all-rights-reserved">
-		  <h6 style="font-weight: 600; font-size: 13px; letter-spacing: 0.3px;">&copy; 2023 All Rights Reserved. MERCHCafe Bali.<br/>
+		  <h6 style="font-weight: 600; font-size: 13px; letter-spacing: normal;">&copy; 2023 All Rights Reserved. MERCHCafe Bali.<br/>
           Designed by <a class="footer-copyright" target="_blank" href="https://fabolousdigitalagency.com">fabolous digital agency</a>.</h6>
         </div>
 	</center>	
@@ -276,10 +257,10 @@
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h3 class="modal-title fs-5 font-rubik" id="exampleModalLabel"><span class="main-colors">MERCHCafe</span> Bali</h3>
+            <h3 class="modal-title fs-5 font-rubik cafe-menu-title" id="exampleModalLabel">MERCHCafe Bali</h3>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -288,7 +269,7 @@
                 <div class="container-fluid">
                   <div class="row">
                     <div class="col-md-12 text-center  marb-35">
-                      <h3 class="header-h">Our <span class="main-colors">Menu</span>.</span></h3>
+                      <h3 class="header-h">Our Menu.</h3>
                     </div>
 
                     <div class="col-md-12 text-center popup-menu-filter" id="menu-filters">
@@ -1109,6 +1090,28 @@
 </div>
 <!-- End of WhatsApp Button -->
 
+<!-- Pop-up Video -->
+<div class="modal fade" id="merchvideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background: transparent; border: none;">
+      <div>
+        <a href="#" class="close-play-video" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+        </a>
+      </div>
+      <div class="modal-body">
+        <center>
+            <video autoplay muted loop style="background: transparent !important;">
+              <source src="./videos/merchcafebali-video.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Pop-up Video -->
+
 <!-- <center>
 	<button style="padding: 5px 20px; border: 2px solid var(--accent-color); margin-bottom: 10px;" onclick="window.print()">Print this page</button>
 </center> -->
@@ -1162,6 +1165,19 @@
 	 }
 	 });
  	});
+</script>
+
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.querySelector("nav").style.top = "0";
+      } else {
+        document.querySelector("nav").style.top = "-75px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
 </script>
 
 <script type="text/javascript">
@@ -1369,7 +1385,7 @@ function initMap() {
             "elementType": "geometry.fill",
             "stylers": [
                 {
-                    "color": "#c0805d"
+                    "color": "#000000"
                 }
             ]
         },
@@ -1387,7 +1403,7 @@ function initMap() {
             "elementType": "labels.text.fill",
             "stylers": [
                 {
-                    "color": "#000000"
+                    "color": "#ffffff"
                 }
             ]
         },
@@ -1396,7 +1412,7 @@ function initMap() {
             "elementType": "labels.text.stroke",
             "stylers": [
                 {
-                    "color": "#ffffff"
+                    "color": "#000000"
                 }
             ]
         },
@@ -1405,7 +1421,7 @@ function initMap() {
             "elementType": "geometry.fill",
             "stylers": [
                 {
-                    "color": "#c0805d"
+                    "color": "#000000"
                 }
             ]
         },
@@ -1450,7 +1466,7 @@ function initMap() {
             "elementType": "geometry.fill",
             "stylers": [
                 {
-                    "color": "#cd9a7e"
+                    "color": "#333333"
                 }
             ]
         },
