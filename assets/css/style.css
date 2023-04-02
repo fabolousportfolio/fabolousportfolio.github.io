@@ -934,6 +934,7 @@
 	  @media only screen and (max-width: 414px) {
 	  	.about-us-section .about-us-texts {
 	  		font-size: 13px !important;
+	  		font-weight: 600;
 	  		top: 255px !important;
 	  	}
 	  }
@@ -1519,6 +1520,10 @@
 		}
 
 		@media only screen and (max-width: 414px) {
+			.menu-restaurant .menu-title {
+				font-size: 13px !important;
+			}
+
 			.menu-restaurant .menu-subtitle {
 				font-size: 10px !important;
 			}
