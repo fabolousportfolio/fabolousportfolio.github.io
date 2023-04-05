@@ -739,7 +739,7 @@
 	    bottom: 0;
 	    left: 0;
 	    margin-top: -25px !important;
-	    background: url(https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+	    background: url(https://images.pexels.com/photos/374147/pexels-photo-374147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 	    background-size: cover;
 		background-repeat: no-repeat;
 	    background-position: center;
@@ -912,7 +912,7 @@
 		font-size: 15px !important;
 		font-weight: 500;
 		letter-spacing: normal !important;
-		padding: 8.9px 5px;
+		padding: 8px 5px;
 		background-color: rgba(255, 255, 255, 0.8);
 /*		box-shadow:0 0 0 0.5em black;*/
 		display: inline;
@@ -923,6 +923,7 @@
 		align-items: center;
 		place-items: center;
 		place-content: center;
+		font-style: italic;
 	  }
 
 	  @media only screen and (max-width: 767px) {
@@ -934,8 +935,9 @@
 	  @media only screen and (max-width: 414px) {
 	  	.about-us-section .about-us-texts {
 	  		font-size: 13px !important;
-	  		font-weight: 600;
+/*	  		font-weight: 600;*/
 	  		top: 255px !important;
+/*	  		padding: 8.5px 5px;*/
 	  	}
 	  }
 
